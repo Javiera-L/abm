@@ -27,35 +27,6 @@ for j in range(num_of_iterations):
             agents[i][1] = (agents[i][1] -1) % 100
 
 
-# Random walk one step.
-# if random.random() < 0.5:
-#     agents[0][0] += 1
-# else:
-#     agents[0][0] -= 1
-
-# if random.random() < 0.5:
-#     agents[0][1] += 1
-# else:
-#     agents[0][1] -= 1
-
-# #agents.append([agents[0][0],agents[0][1]])
-
-# agents.append([random.randint(0,99),random.randint(0,99)])
-
-
-# # Random walk one step.
-# if random.random() < 0.5:
-#     agents[1][0] += 1
-# else:
-#     agents[1][0] -= 1
-
-# if random.random() < 0.5:
-#     agents[1][1] += 1
-# else:
-#     agents[1][1] -= 1
-
-#agents.append([agents[1][0],agents[1][1]])
-
 print(agents)
 #coord = max(agents, key=operator.itemgetter(1))
 
@@ -71,5 +42,3 @@ matplotlib.pyplot.show()
 
 distance = distance_between(agents[0], agents[1])
 print(distance)
-# answer = (((y0 - y1)**2) + ((x0 - x1)**2))**0.5
-# print(answer)
