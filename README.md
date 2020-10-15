@@ -29,13 +29,15 @@ Once this is completed, we install the directory from GitHub onto our computer. 
 
 After this step, we are need to add in our command line arguments. In order to do this, hover over the top bar menu, click on Run, and in the drop down menu click on Configuration per file. Tick command line options, and type in three integers that will be our initial parameters: number of agents, number of iterations, and neighbourhood. This last argument represents the minimum distance at which the agents interact with each other.
 
-
+![](images/cmdline.png)
 
 We can now run the script by clicking the "Run" option in Spyder.
 
 Running the script should open up 2 windows. One is called Model, and will be our GUI where we can run our animation. The other window that opens up is an empty Fig 1 window, which must be kept open at all times whilst the program is running, otherwise the animation will not work.
 
-From our Model window, we choose "Run Model" from the menu bar to see the animation of the Agents. During the animation, we can also choose the "Print agents" option from the menu bar to see the state of the agents at each iteration. When the animation has finished running, we can save our environment data to an outfile called "out.txt" that will be saved inside the same directory as the other files included in the program. This can be accessed via the "Save environment data" option in the menu bar. Finally, when you want to close the program, you can do this by clicking on the "Exit" option in the menu bar of our GUI.
+![](images/spyderrun.png)
+
+From our Model window, we choose "Run Model" from the menu bar to see the animation of the Agents. During the animation, we can also choose the "Print agents" option from the menu bar to see the state of the agents at each iteration. When the animation has finished running, we can save our environment data to an outfile called "outfile.txt" that will be saved inside the same directory as the other files included in the program. This can be accessed via the "Save environment data" option in the menu bar. Finally, when you want to close the program, you can do this by clicking on the "Exit" option in the menu bar of our GUI.
 
 **2nd Method: Using Terminal**
 
@@ -48,12 +50,11 @@ Here, the command line arguments after `python modelfinal.py` represent as befor
 
 Upon running the model, a new window should appear called "Model". This is our GUI, and from the menu bar we can choose, as before, to "Run model", "Print agents", "Save environment data", or "Exit" from the program". When clicking on "Run Model", the animation should appear.
 
-
 ## Tests
 Include images here.
 
 ## Known issues
-
+1) When running from Spyder, the empty Fig 1 window appears. However when running from Terminal, this is not a problem.
 
 ## Further improvements
-
+The current model is fairly simple, and a lot more could be added to make it more complex. For example, more beahviours could be added to the `Agents()` class, such as a `death()` function, `reproduction()`, etc. In addition, it could be interesting to add a predator class that competes with our current `Agent()` class.
