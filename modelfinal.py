@@ -64,8 +64,10 @@ def initialise_agents(num_of_agents, environment):
     agents = []
     # Make the agents.
     for i in range(num_of_agents):
-        y = int(td_ys[i].text)
-        x = int(td_xs[i].text)
+        #note here that we multiply the scraped values by 3 since they are 
+        #limited to a 100 by 100 grid, whereas we have a 300 by 300 grid.
+        y = int(td_ys[i].text) * 3 
+        x = int(td_xs[i].text) * 3
         agents.append(agentframeworkfinal.Agent(environment, agents, x, y))
     return agents
 
