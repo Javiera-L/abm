@@ -14,7 +14,7 @@ Files included in the repository are as follows.
 
 `in.txt`: Text file that contains the environment data with which the Agents will interact. 
 
-`out.txt`: This file exists optionally. It is created after the simulation is run, and the user can choose to save the environment data to this file.
+`outfile.txt`: This file exists optionally. It is created after the simulation is run, and the user can choose to save the environment data to this file.
 
 `tests`: Folder containing test files.
 
@@ -29,6 +29,8 @@ Once this is completed, we install the directory from GitHub onto our computer. 
 
 After this step, we are need to add in our command line arguments. In order to do this, hover over the top bar menu, click on Run, and in the drop down menu click on Configuration per file. Tick command line options, and type in three integers that will be our initial parameters: number of agents, number of iterations, and neighbourhood. This last argument represents the minimum distance at which the agents interact with each other.
 
+
+
 We can now run the script by clicking the "Run" option in Spyder.
 
 Running the script should open up 2 windows. One is called Model, and will be our GUI where we can run our animation. The other window that opens up is an empty Fig 1 window, which must be kept open at all times whilst the program is running, otherwise the animation will not work.
@@ -42,7 +44,7 @@ Install the respository onto your computer from GitHub. Open up Terminal and nav
 Example:
 `python modelfinal.py 10 100 20`
 
-Here, the command line arguments after `modelfinal.py` represent as before our initial parameters: number of agents, number of iterations, and neighbourhood. Remember these must be integers, otherwise the program will not run.
+Here, the command line arguments after `python modelfinal.py` represent as before our initial parameters: number of agents, number of iterations, and neighbourhood. Remember these must be integers, otherwise the program will not run.
 
 Upon running the model, a new window should appear called "Model". This is our GUI, and from the menu bar we can choose, as before, to "Run model", "Print agents", "Save environment data", or "Exit" from the program". When clicking on "Run Model", the animation should appear.
 
