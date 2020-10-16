@@ -3,7 +3,7 @@ Assignment 1.
 
 ## Project Description:
 
-The aim of this project is to build a simple agent-based model, a tool often used by programmers in the social sciences. The code produces an animation of the Agents interacting with the environment and each other, and includes a simple GUI using Tkinter. An output file of the environment data after the simulation is optionally produced.
+The aim of this project is to build a simple agent-based model, a tool often used by programmers in the social sciences. It is built using the instructions and suggestions from the ["Programming for Social Scientists: Core skills"](https://www.geog.leeds.ac.uk/courses/computing/study/core-python-phd/) course from the University of Leeds. The code produces an animation of the Agents interacting with the environment and each other, and includes a simple GUI using Tkinter. An output file of the environment data after the simulation is optionally produced.
 
 ## Repository Contents
 Files included in the repository are as follows.
