@@ -29,6 +29,8 @@ Once this is completed, we install the directory from GitHub onto our computer. 
 
 After this step, we are need to add in our command line arguments. In order to do this, hover over the top bar menu, click on Run, and in the drop down menu click on Configuration per file. Tick command line options, and type in three integers that will be our initial parameters: number of agents, number of iterations, and neighbourhood. This last argument represents the minimum distance at which the agents interact with each other.
 
+* Note: I use a Mac, so your outputs might be different if using Windows. *
+
 ![](images/cmdline.png)
 
 We can now run the script by clicking the "Run" option in Spyder.
