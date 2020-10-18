@@ -35,6 +35,7 @@ def read_environment():
         envir.append(rowlist)
     f.close() # Don't close until you are done with the reader;
             # the data is read on request.
+    print("Loading environment...")
     return envir
 
 def initialise_agents(num_of_agents, environment):
@@ -69,6 +70,7 @@ def initialise_agents(num_of_agents, environment):
         y = int(td_ys[i].text) * 3 
         x = int(td_xs[i].text) * 3
         agents.append(agentframeworkfinal.Agent(environment, agents, x, y))
+    print("Initialising Agents...")
     return agents
 
 
@@ -230,16 +232,77 @@ def exit_gui():
     root.destroy()
 
 
+def is_integer(n):
+    """
+    Find whether a string is an integer.
+
+    Parameters
+    ----------
+    n : string
+        Any string.
+
+    Returns
+    -------
+    Bool
+        Returns True if string is an integer.
+        Returns False otherwise.
+
+    """
+    try:
+        float(n)
+    except ValueError:
+        return False
+    else:
+        return float(n).is_integer()
+
+
 if __name__ == "__main__":
 
     #define global parameters
     carry_on = True
+    #default initial parameters
+    NUM_OF_AGENTS = 10
+    NUM_OF_ITERATIONS = 100
+    NEIGHBOURHOOD = 20
+    
     
     #read in the parameters from the command line
-    num_of_agents = int(sys.argv[1])
-    num_of_iterations = int(sys.argv[2])
-    neighbourhood = int(sys.argv[3])
+    #check that the user has inputted the right number of arguments to cmd line
+    if len(sys.argv) == 4:
+        arg1 = is_integer(sys.argv[1])
+        arg2 = is_integer(sys.argv[2])
+        arg3 = is_integer(sys.argv[3])
 
+        if arg1:
+            num_of_agents = int(sys.argv[1])
+        else:
+            print("Number of agents must be an integer. Using default values.")
+            num_of_agents = NUM_OF_AGENTS
+    
+        if arg2:
+            num_of_iterations = int(sys.argv[2])
+        else:
+            print("Number of iterations must be an integer. Using default values.")
+            num_of_iterations = NUM_OF_ITERATIONS
+    
+        if arg3:
+            neighbourhood = int(sys.argv[3])
+        else:
+                print("Neighbourhood must be an integer. Using default values.")
+                neighbourhood = NEIGHBOURHOOD
+
+    else:
+        print("Incorrect number of arguments inputted. Using default values.")
+        num_of_agents = NUM_OF_AGENTS
+        num_of_iterations = NUM_OF_ITERATIONS
+        neighbourhood = NEIGHBOURHOOD
+
+
+    print("Loading initial parameters...")
+    print("Number of agents =", num_of_agents)
+    print("Number of iterations =", num_of_iterations)
+    print("Neighbourhood =", neighbourhood)
+    
     #initialise our model
     environment = read_environment()
     agents = initialise_agents(num_of_agents, environment)
