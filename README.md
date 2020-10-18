@@ -16,7 +16,7 @@ Files included in the repository are as follows.
 
 `outfile.txt`: This file exists optionally. It is created after the simulation is run, and the user can choose to save the environment data to this file.
 
-`tests`: Folder containing test files.
+`test.py`: Tests functionality of the program. Checks whether the default values are used when non-integer/incorrect number of parameters an inputted into the command line.
 
 `older_versions`: Folder including the older versions of the code. Useful only to see the evolution of the program.
 
