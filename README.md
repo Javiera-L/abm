@@ -27,7 +27,8 @@ You must have [Anaconda](https://www.anaconda.com/products/individual) installed
 
 Once this is completed, we install the directory from GitHub onto our computer. We then open the modelfinal.py script, go in the IPython console settings, under Graphics and select Backend: Tkinter from the dropdown menu. This will make sure our animation runs properly.
 
-After this step, we are need to add in our command line arguments. In order to do this, hover over the top bar menu, click on Run, and in the drop down menu click on Configuration per file. Tick command line options, and type in three integers that will be our initial parameters: number of agents, number of iterations, and neighbourhood. This last argument represents the minimum distance at which the agents interact with each other.
+After this step, we are need to add in our command line arguments. In order to do this, hover over the top bar menu, click on Run, and in the drop down menu click on Configuration per file. Tick command line options, and type in three integers that will be our initial parameters: number of agents, number of iterations, and neighbourhood. This last argument represents the minimum distance at which the agents interact with each other. If one of the parameters given is not an integer, the program will use the default values. Similarly, if no parameters are given, the program will run with the default values.
+
 
 ![](images/cmdline.png)
 
@@ -35,7 +36,7 @@ We can now run the script by clicking the "Run" option in Spyder.
 
 Running the script should open up 2 windows. One is called Model, and will be our GUI where we can run our animation. The other window that opens up is an empty Fig 1 window, which must be kept open at all times whilst the program is running, otherwise the animation will not work.
 
-* Note: I use a Mac, so your outputs might be different if using Windows.
+* Note: I use a Mac, so your GUI might look different if using Windows.
 
 ![](images/spyderrun.png)
 
@@ -48,7 +49,7 @@ Install the respository onto your computer from GitHub. Open up Terminal and nav
 Example:
 `python modelfinal.py 10 100 20`
 
-Here, the command line arguments after `python modelfinal.py` represent as before our initial parameters: number of agents, number of iterations, and neighbourhood. Remember these must be integers, otherwise the program will not run.
+Here, the command line arguments after `python modelfinal.py` represent as before our initial parameters: number of agents, number of iterations, and neighbourhood. These must be integers. If one of the parameters given is not an integer, the program will use the default values. Similarly, if no parameters are given, the program will run with the default values.
 
 Upon running the model, a new window should appear called "Model". This is our GUI, and from the menu bar we can choose, as before, to "Run model", "Print agents", "Save environment data", or "Exit" from the program". When clicking on "Run Model", the animation should appear.
 
