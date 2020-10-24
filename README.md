@@ -53,9 +53,6 @@ Here, the command line arguments after `python modelfinal.py` represent as befor
 
 Upon running the model, a new window should appear called "Model". This is our GUI, and from the menu bar we can choose, as before, to "Run model", "Print agents", "Save environment data", or "Exit" from the program". When clicking on "Run Model", the animation should appear.
 
-## Tests
-Include images here.
-
 ## Known issues
 1) When running from Spyder, the empty Fig 1 window appears. However when running from Terminal, this is not a problem.
 
